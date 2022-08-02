@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root{
+    --primary-color: rgb(66, 134, 197);
+}
+
+body{
+    background-color: beige;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: solid;
+}
+
+.logo-details{
+    text-align: center;
+    color: rgb(73, 73, 73);
+    display:flex;
+    padding: 0 20% 0 20%;
+}
+
+.hero{
+    text-align: center;
+}
+
+h1{
+    font-size: 2em;
+}
+.inputs{
+    margin: 5%;
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: darkgrey;
+    text-align: center;
+}
+.box{
+    padding: 5px;
+}
+.h3{
+    text-align: center;
+}
+
+.PClass{
+    font-size: 1em;
+    color: rgb(78, 77, 77);
+}
+
+.paragraph{
+    font-size: 1em;
+    color: rgb(78, 77, 77);
+    text-align: center;
+}

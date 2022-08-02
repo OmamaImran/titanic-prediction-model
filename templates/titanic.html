@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITANIC</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/titaniccss.css') }}">
+</head>
+<body>
+
+
+  <div class="navbar">
+    <p class="logo">TITANIC</p>
+    <p class="logo-details">The Titanic was a luxury British steamship that sank in 
+      the early hours of April 15, 1912 after striking an iceberg, leading to the deaths of more than 1,500 passengers and crew.</p>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <h1>WOULD YOU HAVE SURVIVED THE TITANIC, OR NOT?</h1>
+        <p>Enter the class you would have chosen, 1st class, 2nd class or 3rd class.<br> Enter your age. <br> Select your gender. <br> </p>
+        <h1>FIND OUT!!</h1>
+      <!-- <img width="100" height="100" class="hero-img" src="C:\Users\www\Downloads\tt.jpg" alt="tiatnicimage"> -->
+    </div>
+  </section>
+
+  <section class="inputs">
+    <h3>{{pred}}</h3>
+    <form action="/predicts" method="post">
+      <label for="PClass">Passenger's Class</label>
+      <input class="box" type="text" placeholder="1,2,3" id="Pclass" name="Pclass">
+      <p class="PClass">(1st class, 2nd class, 3rd class)</p>
+
+      <label for="Age">Age</label>
+      <input class="box" type="text" id="Age" name="Age"><br>
+
+      <label for="Male">Male</label>
+      <input type="radio" name="Sex" id="Male" value=1><br>
+      <label for="Female">Female</label>
+      <input type="radio" name="Sex" id="Female" value=0><br> 
+
+      <button type="submit" value="LETS CHECK">PREDICT</button><br>
+
+    </form>
+
+    <!-- <h3>{{pred}}</h3> -->
+
+  </section>
+
+  <section class="info">
+    <p class="paragraph"> This model is 70% accurate. This is built through the actual titanic dataset from kaggle. </p>
+  </section>
+</body>
+</html>
